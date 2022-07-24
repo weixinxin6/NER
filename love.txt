@@ -1,0 +1,16 @@
+Abstract: Deep learning models have achieved state-of-the-art performance in named entity recognition (NER);
+
+however, relies heavily on substantial amounts of labeled data. 
+
+In some specific areas such as medical, financial, and military domains, labeled data is very scarce, while unlabeled data is readily available.
+
+Previous studies have used unlabeled data to enrich word representations, but a large amount of entity information in unlabeled data is neglected, which may be beneficial to the NER task. 
+
+In this study, we propose a semi-supervised method for NER tasks, which learns to create high-quality labeled data by applying a pre-trained module to filter out erroneous pseudo labels. 
+
+Pseudo labels are automatically generated for unlabeled data and used as if they were true labels. Our semi-supervised framework includes three steps: constructing an optimal single neural model for a specific NER task, learning a module that evaluates pseudo labels, and creating new labeled data and improving the NER model iteratively. 
+
+Experimental results on two English NER tasks and one Chinese clinical NER task demonstrate that our method further improves the performance of the best single neural model. 
+
+Even when we use only pre-trained static word embeddings and do not rely on any external knowledge, our method achieves comparable
+performance to those state-of-the-art models on the CoNLL-2003 and OntoNotes 5.0 English NER tasks.
